@@ -1,3 +1,7 @@
+# Environment variables
+.env
+*.env
+
 # Python
 __pycache__/
 *.py[cod]
@@ -7,30 +11,33 @@ __pycache__/
 env/
 venv/
 ENV/
-.venv
-pip-log.txt
-pip-delete-this-directory.txt
-.pytest_cache/
-*.log
+env.bak/
+venv.bak/
+
+# Database
+*.db
+*.sqlite
+
+# Docker
+.dockerignore
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
+
+# Logs
+*.log
+logs/
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Project specific
-data/*.csv
-*.csv
+# Node modules (if any)
+node_modules/
 
-# Docker
-.dockerignore
-# Environment variables
-.env
-*.env
-!*.env.example
+# Temporary files
+tmp/
+temp/
